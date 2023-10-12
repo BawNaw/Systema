@@ -1,11 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Servicios</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo-bar">
+        <a href="/principal.html"
+          ><img src="./img/logoTRAT.jpeg" class="img-logo-bar"
+        /></a>
+      </div>
+      <div class="botones-bar">
+        <ul>
+          <li><a href="/principal.html">Principal</a></li>
+          <li><a href="/empleados-1.html">Empleados</a></li>
+          <li><a href="/materiales.html">Materiales</a></li>
+          <li><a href="/index.html">Servicio</a></li>
+        </ul>
+        <ul>
+          <li><a href="login.html">Salir</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <div class="flecha-1"><a href="/index.html" class="flecha-1-ref"><</a></div>
+      <!-- *Cambiar href -->
+
+      <div class="centro">
+        <div class="encabezado">
+          <h1>Servicios</h1>
+          <hr class="separador" />
+          <h2>Testigo en el Tablero</h2>
+          <p>Descripción</p>
+        </div>
+
+        <div class="desplegable">
+          <h4 class="desplegable-name">Testigo en el Tablero</h4>
+          <div>
+            <form action="POST" class="form-oculto">
+              <fieldset>
+                <legend>Testigo del Tablero:</legend>
+                <input
+                  type="checkbox"
+                  class="checkbox-3"
+                  id="oil-lev"
+                  name="oil-lev"
+                />
+                <label
+                  class="chackbox-label"
+                  for="oil-lev"
+                  data-option="Nivel de Aceite"
+                ></label>
+                <input
+                  type="checkbox"
+                  class="checkbox-3"
+                  id="t-motor"
+                  name="t-motor"
+                />
+                <label
+                  class="chackbox-label"
+                  for="t-motor"
+                  data-option="Testigo del Motor"
+                ></label>
+                <input
+                  type="checkbox"
+                  class="checkbox-3"
+                  id="t-battery"
+                  name="t-battery"
+                />
+                <label
+                  class="chackbox-label"
+                  for="t-battery"
+                  data-option="Testigo de Batería"
+                ></label>
+                <input
+                  type="checkbox"
+                  class="checkbox-3"
+                  id="preheating"
+                  name="preheating"
+                />
+                <label
+                  class="chackbox-label"
+                  for="preheating"
+                  data-option="Precalentamiento Motor Diesel"
+                ></label>
+
+                <input
+                  type="checkbox"
+                  class="checkbox-3"
+                  id="c-secure"
+                  name="c-secure"
+                />
+                <label
+                  class="chackbox-label"
+                  for="c-secure"
+                  data-option="Cinturon de Seguridad"
+                ></label>
+
+                <input
+                  type="checkbox"
+                  class="checkbox-3"
+                  id="lights-ni"
+                  name="lights-ni"
+                />
+                <label
+                  class="chackbox-label"
+                  for="lights-ni"
+                  data-option="Luces de Antiniebla"
+                ></label>
+
+                <input
+                  type="checkbox"
+                  class="checkbox-3"
+                  id="newm"
+                  name="newm"
+                />
+                <label
+                  class="chackbox-label"
+                  for="newm"
+                  data-option="Presión de Neumaticos"
+                ></label>
+
+                <input
+                  type="checkbox"
+                  class="checkbox-3"
+                  id="res-comb"
+                  name="res-comb"
+                />
+                <label
+                  class="chackbox-label"
+                  for="res-comb"
+                  data-option="Reserva de Combustible"
+                ></label>
+
+                <input
+                  type="checkbox"
+                  class="checkbox-3"
+                  id="renos"
+                  name="renos"
+                />
+                <label
+                  class="chackbox-label"
+                  for="renos"
+                  data-option="Testigo de Renos"
+                ></label>
+
+                <input
+                  type="checkbox"
+                  class="checkbox-3"
+                  id="frenos-abs"
+                  name="frenos-abs"
+                />
+                <label
+                  class="chackbox-label"
+                  for="frenos-abs"
+                  data-option="Testigo de Fenos ABS"
+                ></label>
+
+                <input
+                  type="checkbox"
+                  class="checkbox-3"
+                  id="airbag"
+                  name="airbag"
+                />
+                <label
+                  class="chackbox-label"
+                  for="airbag"
+                  data-option="Testigo de Airbag"
+                ></label>
+
+                <input
+                  type="checkbox"
+                  class="checkbox-3"
+                  id="bombilla"
+                  name="bombilla"
+                />
+                <label
+                  class="chackbox-label"
+                  for="bombilla"
+                  data-option="Testigo de Bombilla"
+                ></label>
+
+                <input
+                  type="checkbox"
+                  class="checkbox-3"
+                  id="notAp"
+                  name="notAp"
+                />
+                <label
+                  class="chackbox-label"
+                  for="notAp"
+                  data-option="No Aplica"
+                ></label>
+
+                <br />
+
+                <input type="checkbox" id="otro" name="otro" />
+                <label for="otro">Otro:</label>
+                <br />
+                <input type="text" name="otro" class="filargo"/>
+                <button type="button" class="boton-servicio-3">Gurdar</button>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="desplegable">
+          <h4 class="desplegable-name">Niveles de Fluido</h4>
+          <div>
+            <form action="POST" class="form-oculto">
+              <faldset>
+                <legend>Niveles de Fluido:</legend>
+              </faldset>
+            </form>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="desplegable">
+          <h4 class="desplegable-name">Servicios</h4>
+          <div>
+            <form action="POST" class="form-oculto">
+              <faldset>
+                <legend>Servicios:</legend>
+              </faldset>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="flecha-2">
+        <a href="/servicio2.html" class="flecha-2-ref">></a>
+        <!-- *Cambiar href -->
+      </div>
+
+      <div class="clearfix"></div>
+    </main>
+
+    <footer>
+      <h1 class="footer">Footer</h1>
+    </footer>
+  </body>
 </html>

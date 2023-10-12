@@ -116,6 +116,59 @@ form hr {
     transform: translateX(50%);
 }
 
+/* ! Estilos de la pagina "Servicios3.html" en la parte de los forularios con checkbox*/
+
+.checkbox-3 {
+    display: none;
+}
+
+.checkbox-3 + .chackbox-label::before {
+    content: attr(data-option);
+    display: inline-block;
+    width: auto; /* El tamaño cambia a la longitud del texto*/
+    height: 20px;
+    border: 1px solid black;
+    padding: 3px;
+    margin: 5px;
+    color: black; /* Color de la letra*/
+    font-weight:200;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.checkbox-3:checked + .chackbox-label::before {
+    background-color: blue;
+    color: white;
+  }
+  
+.checkbox-3 + .chackbox-label::after {
+  content: "";
+}
+
+.filargo { /* input texto de formulario, otros*/
+    width: 100%;
+    border: solid 1px #000;
+    padding: 2px;
+    font-family: 'Century Gothic', Arial;
+}
+
+.desplegable {
+    width: 100%;
+    border-radius: 5px;
+    background-color: #cacaca;
+    padding: 5px 0;
+}
+
+.desplegable-name { 
+    text-align: center;
+}
+
+.form-oculto { /*Formularios*/
+    margin-top: 10px;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+}
 /* ! Esta parte no sirve porque se opto por utilizar divs internos dentro del formulario
 form .e-izquierda {
     display: block;
@@ -201,7 +254,23 @@ form .e-derecha {
     cursor: pointer;
 }
 
-.boton-servicio-1:hover {
+.boton-servicio-3 {
+    display: block;
+    background-color: rgb(1,11,31);
+    color: #ccc;
+    border: solid 1px #071d2b;
+    padding: 7px;
+    border-radius: 5px;
+    float: right;
+    margin-top: 10px;
+    font-family: 'Century Gothic';
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.boton-servicio-1:hover,
+.boton-servicio-3:hover {
     background-color: #093753;
     color: #ffffff;
     border: solid 1px #201679;
@@ -218,7 +287,7 @@ form .e-derecha {
     align-items: center;
     background-color: #000;
     width: 100%;
-    height: 100vh;
+    height: 680px;
 }
 
 .img-galeria {
@@ -233,7 +302,7 @@ form .e-derecha {
 }
 
 .img-galeria:hover {
-    padding: 1px;
+    border: solid 2px #fff;
 }
 
 /*
