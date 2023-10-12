@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Servicios</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="/SegundoP/javascript.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo-bar">
+        <a href="/principal.html"><img src="./img/logoTRAT.jpeg" class="img-logo-bar" /></a>
+      </div>
+      <div class="botones-bar">
+        <ul>
+          <li><a href="/principal.html">Principal</a></li>
+          <li><a href="#">Empleados</a></li>
+          <li><a href="#">Inventario</a></li>
+          <li><a href="/index.html">Servicio</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Salir</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <div class="flecha-1"><a href="#" class="flecha-1-ref"><</a></div>
+
+      <div class="centro">
+        <div class="encabezado">
+          <h1>Servicios</h1>
+          <hr class="separador" />
+          <h2>Registro del Servicio</h2>
+          <p>
+            Llene el siguiente formulario para generar la orden del servicio,
+            sea especpífico.
+          </p>
+        </div>
+
+        <form action="POST" class="formulario-1">
+          <faldset>
+            <legend>Datos del Automóvil del Cliente:</legend>
+            <hr />
+            <div class="form-group">
+              <label for="marca">Marca:</label>
+              <select name="marca">
+                <option value="" selected disabled>Seleccione una marca</option> <!-- ! Lineas como esta, hacen que se muestre esta opcion al cargar la pagina pero no es una opcion disponible de escoger -->
+                <option value="toyota">Toyota</option>
+                <option value="chevrolet">Chevrolet</option>
+                <option value="ford">Ford</option>
+                <option value="kia">KIA</option>
+                <option value="volkswagen">Volkswagen</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="modelo">Modelo:</label>
+              <input type="text" />
+            </div>
+
+            <div class="form-group">
+              <label for="año">Año:</label>
+              <input type="number" id="año" name="año" min="1970" max="2025" />
+            </div>
+
+            <div class="form-group">
+              <label for="clase">Clase:</label>
+              <select name="clase">
+                <option value="" selected disabled>Seleccione un elemento</option>
+                <option value="a">A</option>
+                <option value="b">B</option>
+                <option value="c">C</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="tipo">Tipo:</label>
+              <input type="text" name="tipo" />
+            </div>
+
+            <div class="form-group">
+              <label for="color">Color:</label>
+              <input type="color" list="“coloresbasicos”" />
+              <datalist id="“coloresbasicos”">
+                <option value="“#000000”">Negro</option>
+                <option value="“#ffffff”">Blanco</option>
+                <option value="“#ff0000”">Rojo</option>
+                <option value="“#00ff00”">Verde</option>
+                <option value="“#0000ff”">Azul</option>
+              </datalist>
+            </div>
+            <div class="form-group">
+              <label for="placa">Placa:</label>
+              <input
+                type="text"
+                name="placa"
+                pattern="[A-Z]{1,3}-\d{3,4}-[A-Z]{3}"
+                title="La placa debe tener el formato A-10000-WYZ o HYO-980-YXC"
+                placeholder="Ej: A-10000-XYZ ó ABC-888-XYZ"
+              />
+            </div>
+          </faldset>
+        </form>
+
+        <form action="POST" class="formulario-1">
+          <faldset>
+            <legend>Datos Técnicos del Vehículo:</legend>
+            <hr />
+
+            <div class="form-group">
+              <label for="cilindrada">Motor-CC/L:</label>
+              <input
+                type="number"
+                id="cilindrada"
+                name="cilindrada"
+                min="50"
+                max="10000"
+                placeholder="Ingresa la cilindrada en cc"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="transmision">Transmisión:</label>
+              <select name="Transmisión" id="Transmisión">
+                <option value="" selected disabled>Seleccione una opción</option>
+                <option value="manual">Manual</option>
+                <option value="automática">Automática</option>
+                <option value="semiautomatíca">Semiautomatíca</option>
+                <option value="manumática">Manumática</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="cilindros">Número de cilindros:</label>
+
+              <div class="inputDiv i1"></div>
+              <!-- ![FALTANTE]: Falta acabar esta parte con JS y CSS3 -->
+            </div>
+
+            <div class="form-group">
+              <label for="nivel">NIV:</label>
+              <input type="number" />
+            </div>
+
+            <div class="form-group">
+              <label for="version">Versón:</label>
+              <input type="text" />
+            </div>
+            <div class="form-group">
+              <label for="combustible">Combustible:</label>
+              <input
+                type="radio"
+                id="gasolina"
+                name="combustible"
+                value="gasolina"
+              />
+              <label for="gasolina">Gasolina</label>
+              <input
+                type="radio"
+                id="diesel"
+                name="combustible"
+                value="diesel"
+              />
+              <label for="diesel">Diesel</label>
+            </div>
+
+            <div class="form-group">
+              <label for="kilometraje">Kilometraje:</label>
+              <input
+                type="number"
+                id="kilometraje"
+                name="kilometraje"
+                min="1"
+              />
+            </div>
+
+            <!-- ! [FALTANTE]: puede que falte más información en este formulario -->
+          </faldset>
+        </form>
+
+        <button type="button" class="boton-servicio-1">Gurdar</button>
+      </div>
+
+      <div class="flecha-2"><a href="./servicio2.html" class="flecha-2-ref">></a></div>
+
+      <div class="clearfix"></div>
+    </main>
+
+    <footer>
+      <h1 class="footer">Footer</h1>
+    </footer>
+  </body>
+</html>

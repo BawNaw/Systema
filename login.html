@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="login.css">
+  </head>
+  <body>
+    <header>
+      <div class="logo-bar">
+        <a href="/principal.html"><img src="./img/logoTRAT.jpeg" class="img-logo-bar" /></a>
+      </div>
+      <div class="botones-bar">
+        <ul>
+          <li><a href="#">Principal</a></li>
+          <li><a href="#">Empleados</a></li>
+          <li><a href="#">Inventario</a></li>
+          <li><a href="/index.html">Servicio</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Salir</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <div class="centro">
+        <div class="encabezado">
+          <h1>Log-In</h1>
+          <hr class="separador" />
+          <p>
+            Inicie Sesión para continuar
+          </p>
+        </div>
+        <div class="especial">
+          <form action="POST">
+            <faldset>
+              <legend>Iniciar Sesión</legend>
+              <hr>
+              <div class="form-group">
+                <label for="name">Usuario:</label>
+                <input type="text" placeholder="Ingrese su user name">
+              </div> 
+              <div class="form-group">
+                <label for="name">Contraseña:</label>
+                <input type="password" placeholder="Ingrese su contraseña">
+              </div> 
+              <div>
+                <a class="ingresar" href="/principal.html">Ingresar</a>
+              </div> 
+            </faldset>
+          </form>
+        </div>
+      </div>
+
+      <div class="clearfix"></div>
+    </main>
+
+    <footer>
+      <h1 class="footer">Footer</h1>
+    </footer>
+  </body>
+</html>
