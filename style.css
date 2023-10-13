@@ -130,14 +130,15 @@ form hr {
     border: 1px solid black;
     padding: 3px;
     margin: 5px;
-    color: black; /* Color de la letra*/
-    font-weight:200;
+    color: #0a0441; /* Color de la letra*/
+    font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    border-radius: 5px;
 }
 
 .checkbox-3:checked + .chackbox-label::before {
-    background-color: blue;
+    background-color: #0a0441;
     color: white;
   }
   
@@ -303,6 +304,59 @@ form .e-derecha {
 
 .img-galeria:hover {
     border: solid 2px #fff;
+}
+
+
+/* 
+    TODO: Estilos especificos para el modulo de empleados
+*/
+a .seleccion-p1 {
+    float: left;
+    padding: 30px 5px;
+    background-color: #0a0441;
+    width: 38%;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 6vh;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 3vh;
+    border-radius: 10px;
+    box-shadow: 4px 4px 5px #000;  /* !Sombra de los cuadros*/
+    text-decoration: none;
+    color: #fff;
+}
+
+a .seleccion-p1 .selecionp1-icons {
+    width: 25vb;
+    height: 25vh;
+    border: 3px dashed #fff;
+    border-radius: 100%;
+}
+
+a .seleccion-p1 hr {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    width: 50%;
+    transform: translate(50%);
+}
+
+a .seleccion-p1 h4 { /* ! Titulo de los cuadros de seleccion */
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+a .seleccion-p1 p { /* ! Descripción de los cuadros*/
+    margin-top: 3px;
+    font-size: 13px;
+    line-height: 12px; /* ! Separación de renglones*/
+}
+
+a .seleccion-p1:hover {
+    background-color: #0d1664;
+    box-shadow: 4px 4px 5px red; /* !Sombra de los cuadros en hover */
+    transition: 60ms all;
 }
 
 /*

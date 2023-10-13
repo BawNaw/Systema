@@ -1,10 +1,48 @@
+V 2.0
+    -[Correción] de colores
+    -[Diseño] del modulo de empleados
+
+    Fecha [13/10/2023]
+    Bowzer
+
+-----------------------------------------ANTES DE GIT Y GITHUB----------------------------------------------
+V1.5
+    Esta actualizaión tarto principalmente de agregar profesionalismo al proyecto con la implementación de Git y GitHub:
+    -Se descargo la aplicación de Git y se creo una cuenta personal publica (para mi, Bowzer) para guardar el proyecto en un repositorio local y un repositorio remoto.
+    -Se creo el archivo .gitignore para que Git supiera que archivos ignorar del proyecto, por lo cual ya no sera visible la carpeta de pruebas y sus archivos deribados, ni la carpeta .vscode, y tampoco sera visible o accecible desde el repositorio el archivo de vemergente.html.
+    -Se cargaron los archivos necesarios al respositorio local y se vinculo el repesitorio local con el remoto (git con GitHub).
+    -Se cargaron los archivos guardados en el repositorio local, al repositorio remoto.
+
+    Fecha [12/10/2023]
+    Bowzer
+V 1.4
+    Se agregaron 2 nuevas paginas, se continuo con otra parte del modulo de servicios, se corrigieron algunos errores de codigo, se actualizaron las redirecciónes de los elenlaces en las diferentes paginas-modulos: 
+    -[Cambio] de imagenes en la galeria de seleción y se agregaron nuevos recursos de imagen en la carpeta correspondiente para su posterior uso.
+    -[Correción] de algunas partes del código.
+    -[Correción] de estilos en la galeria de selección de servicios.
+    -[Correción] de redireccionamiento de enlaces en los links de las diferentespaginas-modulos.
+    -[Implementación] de 2 nuevos modulos: Materiales y Empleados.
+    -[Implementación] de una nueva parte en el modulo de servicos, así como un gran avance en sus estilos
+
+    Falta:
+    -[Agregar] los contenidos de los 2 nuevos modulos.
+    -[Agregar] todos los elementos html para la nueva parte dl modulo de servicios y algunos estilos.
+    -[Agregar] las siguientes partes del modulo de Servicios.
+    -[Agregar] y [Diseñar] las ventanas flotantes donde corresponden junto con su JavaScript
+    -[Diseñar] el footer.
+
+    Fecha [11/10/2023]
+    Bowzer
 V 1.3
-    -[Implementación] de los iconos en las tablas de la pagina principal.
+    Esta actualización trato de algunas prubas para las ventanas emergentes y algunas correciónes menores:
     -[Correción] de colores en algunos iconos.
     -[Correción] del tamaño maximo que puede ocupar una tabla con un Overflow.
+    -[Implementación] de los iconos en las tablas de la pagina principal.
     -[Implementación] de 2 nuevos archivos: "funciones.js" y "vemergente.html".
     -[Implementación] ventanas emergentes en "principal.html" en sus lugares correspondientes.
-
+    
+    Fecha [10/10/2023]
+    Bowzer
 V 1.2
     En esta actualización se resolvieron problemas del posicionamiento del footer y se agregaron 2 nuevas paginas, la de Log-in y la principal:
     -[Correción] del posicionamiento del footer.
