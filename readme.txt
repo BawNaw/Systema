@@ -1,6 +1,16 @@
+[NOTAS PARA INSTALAR EL PROYECTO]:
+-Se recomienda visualizar el codigo desde Visual Studio Code.
+-Se recomeinda tener instalada la extensión "Better Comments" de Aaron Bond para visualizar mejor los comentarios hechos en los códigos, principalmente en los archivos .css.
+-Creditos de los recursos de imagenes a Bing Imagen Creator con Dall-E 3
+
+-------------------------------------------------------------------------------------------------------------------------
 V 2.0
+    Aquí se corrigieron algunos estilos a modulos ya hechos y tambien se hicieron los diseños de otros 2 modulos (Empleados y Materiales):
     -[Correción] de colores
+    -[Correción] de estilos en la pagina principal
+    -[Implementación] de nuevos recursos de iconos
     -[Diseño] del modulo de empleados
+    -[Diseño] del modulo de materiales
 
     Fecha [13/10/2023]
     Bowzer

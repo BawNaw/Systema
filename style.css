@@ -1,51 +1,51 @@
-*{
-    margin: 0;
+* {
+  margin: 0;
 }
-body{
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /*
     ? Aqui empiezan los estilos del HEADER
 */
-header{
-    background-color: #0011a8;
-    /*position:fixed;*/
-    width: 100%;
-    display: flex;
-    align-items: center; /* ! Esto hace que los botones laterales se alinien con la imagen en su centro*/
-    justify-content: space-around; /* ! Esto hace que los elementos (imagen y contenido de las listas) se dispersen en su elemento contenedor HEADER */
+header {
+  background-color: #0011a8;
+  /*position:fixed;*/
+  width: 100%;
+  display: flex;
+  align-items: center; /* ! Esto hace que los botones laterales se alinien con la imagen en su centro*/
+  justify-content: space-around; /* ! Esto hace que los elementos (imagen y contenido de las listas) se dispersen en su elemento contenedor HEADER */
 }
 
 .logo-bar {
-    margin: 15px 0 15px -70px; /* ! Aqui se le quita margen izquierdo a la imagen para que no quede muy centrada en el cuarto valor de esta regla */
+  margin: 15px 0 15px -70px; /* ! Aqui se le quita margen izquierdo a la imagen para que no quede muy centrada en el cuarto valor de esta regla */
 }
 
 .botones-bar {
-    display: inline-block;
-    font-family: 'Century Gothic';
-    font-weight: 900;
+  display: inline-block;
+  font-family: "Century Gothic";
+  font-weight: 900;
 }
 
 .botones-bar > ul {
-    list-style: none;
-    display: inline-block;
+  list-style: none;
+  display: inline-block;
 }
 .botones-bar > ul > li {
-    display: inline-block; /* ! Esto coloca las referencia una a lado de la otra en una lista */
-    margin: 0 20px 0 5px; /* ! Estos son los mergenes laterales de cada boton de la lista, cambiar los valores puede requerir que tambien se modifique el margue que se le quito a la imagen */
+  display: inline-block; /* ! Esto coloca las referencia una a lado de la otra en una lista */
+  margin: 0 20px 0 5px; /* ! Estos son los mergenes laterales de cada boton de la lista, cambiar los valores puede requerir que tambien se modifique el margue que se le quito a la imagen */
 }
 .botones-bar > ul > li > a {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 .img-logo-bar {
-    height: 70px ; /* ! Esto cambia el tamaño de alto de la imagen, con la clase directamente en la estiqueta img (aqui no funciona el porcentaje para el valor)*/
-    width: auto;
-    border-radius: 10px; /* ! Aqui se le da un acabado redondeado a las esquinas del logo del menu */
+  height: 70px; /* ! Esto cambia el tamaño de alto de la imagen, con la clase directamente en la estiqueta img (aqui no funciona el porcentaje para el valor)*/
+  width: auto;
+  border-radius: 10px; /* ! Aqui se le da un acabado redondeado a las esquinas del logo del menu */
 }
 
 /*
@@ -54,228 +54,217 @@ header{
 */
 
 main {
-    /* ! Poner "margin-top: 90px;" mueve la posición del menú [NO RECOMENDADO]*/
-    /* * El error de arriba se debia a que la etiqueta HEADER tenia la propiedad y el valor "position: fixed;" lo cual al agregar un margen top a los elementos del MAIN tambien lo modificaba fAlta experimentar más con esta propieda*/
-    /* * [NOTA]: Al quitar esa propiedad, ya no hace falta colocarle un margen top a estos elementos para que no los cubra el HEADER, automaticamente le dan su espacio */
-    background-color: #ffffff;
-    margin: 0;
-    display: flex; /* ! De aqui a las proximas 3 lineas se establece el orden de los elementos contenidos, así como tambien la altura que ocuparan */
-    flex-wrap: wrap;
-    min-height: calc(100vh - 210px);
+  /* ! Poner "margin-top: 90px;" mueve la posición del menú [NO RECOMENDADO]*/
+  /* * El error de arriba se debia a que la etiqueta HEADER tenia la propiedad y el valor "position: fixed;" lo cual al agregar un margen top a los elementos del MAIN tambien lo modificaba fAlta experimentar más con esta propieda*/
+  /* * [NOTA]: Al quitar esa propiedad, ya no hace falta colocarle un margen top a estos elementos para que no los cubra el HEADER, automaticamente le dan su espacio */
+  background-color: #ffffff;
+  margin: 0;
+  display: flex; /* ! De aqui a las proximas 3 lineas se establece el orden de los elementos contenidos, así como tambien la altura que ocuparan */
+  flex-wrap: wrap;
+  min-height: calc(100vh - 210px);
 }
 .centro {
-    /* ! Agregar margen-top en esta parte tambien mueve la posición del menu [NO RECOMENDADO] */
-    display: block;
-    width: 70%;
-    float: left;
-    font-family: 'Century Gothic',Verdana, Tahoma, sans-serif; /* ! Tipo de fuente para lo que esta fuera de los formularios*/
+  /* ! Agregar margen-top en esta parte tambien mueve la posición del menu [NO RECOMENDADO] */
+  display: block;
+  width: 70%;
+  float: left;
+  font-family: "Century Gothic", Verdana, Tahoma, sans-serif; /* ! Tipo de fuente para lo que esta fuera de los formularios*/
 }
 
 .centro .encabezado {
-    text-align: center; /* ! Esto centra lo que esta en el Div de clase "encabezado" para que se encuentre centrado*/
-    align-items: center;
-    justify-content: center;
+  text-align: center; /* ! Esto centra lo que esta en el Div de clase "encabezado" para que se encuentre centrado*/
+  align-items: center;
+  justify-content: center;
 }
 
 .centro .encabezado h1 {
-    line-height: 90px;
+  line-height: 90px;
 }
 
 .centro .separador {
-    width: 50%;
-    transform: translateX(55%);
+  width: 50%;
+  transform: translateX(55%);
 }
 
 .centro h2 {
-    font-weight: 500;
-    line-height: 45px;
+  font-weight: 500;
+  line-height: 45px;
 }
 .centro p {
-    line-height: 40px;
+  line-height: 40px;
 }
 
 form {
-    display: block;
-    border: solid 1px #000000;
-    width: 41%;
-    float: left; /* ! Esta linea y la anterior establecen que los formularios se colocaran uno a lado del otro, ocupando un 98% de ancho de su elemento contenedor, que en este caso es ".centro". El display: block; se usa para que se le pueda colocar la propiedad float left a la etiqueta en cuestión, de lo contrario no se podria colocar*/
-    font-family:Arial, Helvetica, sans-serif;
-    margin: 0 2.3% 2% 2.3%; 
-    border-radius: 10px;
-    padding: 15px;
-    max-height: 300px; /* ! De limitación de tamaño de altura maximo de los formularios*/
-    overflow-y: auto; /* ! Barra de Scroll lateral de los paneles */
+  display: block;
+  border: solid 1px #000000;
+  width: 41%;
+  float: left; /* ! Esta linea y la anterior establecen que los formularios se colocaran uno a lado del otro, ocupando un 98% de ancho de su elemento contenedor, que en este caso es ".centro". El display: block; se usa para que se le pueda colocar la propiedad float left a la etiqueta en cuestión, de lo contrario no se podria colocar*/
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 2.3% 2% 2.3%;
+  border-radius: 10px;
+  padding: 15px;
+  max-height: 300px; /* ! De limitación de tamaño de altura maximo de los formularios*/
+  overflow-y: auto; /* ! Barra de Scroll lateral de los paneles */
 }
 
 legend {
-    padding: 10px;
-    font-weight: 600;
+  padding: 10px;
+  font-weight: 600;
 }
 form hr {
-    width: 50%;
-    transform: translateX(50%);
+  width: 50%;
+  transform: translateX(50%);
 }
 
 /* ! Estilos de la pagina "Servicios3.html" en la parte de los forularios con checkbox*/
 
 .checkbox-3 {
-    display: none;
+  display: none;
 }
 
 .checkbox-3 + .chackbox-label::before {
-    content: attr(data-option);
-    display: inline-block;
-    width: auto; /* El tamaño cambia a la longitud del texto*/
-    height: 20px;
-    border: 1px solid black;
-    padding: 3px;
-    margin: 5px;
-    color: #0a0441; /* Color de la letra*/
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    border-radius: 5px;
+  content: attr(data-option);
+  display: inline-block;
+  width: auto; /* El tamaño cambia a la longitud del texto*/
+  height: 20px;
+  border: 1px solid black;
+  padding: 3px;
+  margin: 5px;
+  color: #0a0441; /* Color de la letra*/
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  border-radius: 5px;
 }
 
 .checkbox-3:checked + .chackbox-label::before {
-    background-color: #0a0441;
-    color: white;
-  }
-  
+  background-color: #0a0441;
+  color: white;
+}
+
 .checkbox-3 + .chackbox-label::after {
   content: "";
 }
 
-.filargo { /* input texto de formulario, otros*/
-    width: 100%;
-    border: solid 1px #000;
-    padding: 2px;
-    font-family: 'Century Gothic', Arial;
+.filargo {
+  /* input texto de formulario, otros*/
+  width: 100%;
+  border: solid 1px #000;
+  padding: 2px;
+  font-family: "Century Gothic", Arial;
 }
 
 .desplegable {
-    width: 100%;
-    border-radius: 5px;
-    background-color: #cacaca;
-    padding: 5px 0;
+  width: 100%;
+  border-radius: 5px;
+  background-color: #cacaca;
+  padding: 5px 0;
 }
 
-.desplegable-name { 
-    text-align: center;
+.desplegable-name {
+  text-align: center;
 }
 
-.form-oculto { /*Formularios*/
-    margin-top: 10px;
-    width: 90%;
-    justify-content: center;
-    align-items: center;
+.form-oculto {
+  /*Formularios*/
+  margin-top: 10px;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
 }
-/* ! Esta parte no sirve porque se opto por utilizar divs internos dentro del formulario
-form .e-izquierda {
-    display: block;
-    left: 0;
-}
-form .e-derecha {
-    display: block;
-    right: 0;
-}*/
-
-/*form label {
-    display: block;*/
-    /* ! Aqui no poner "float: left", ya que encima muchas cosas y pierde coherencia el formulario*/
-/*}*/
-
-.form-group { /* ! Esto Odena el interior de los formularios, cada campo por asi decirlo, debe de estar dentro de un div contenedor con el nombre de esta clase */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
+.form-group {
+  /* ! Esto Odena el interior de los formularios, cada campo por asi decirlo, debe de estar dentro de un div contenedor con el nombre de esta clase */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
 .flecha-1 {
-    width: 15%;
-    background-color: #fff;
-    color: #000000;
-    display: flex; /* ! Gracias a esta linea, la flecha se centra verticalmente*/
-    float: left;
-    flex: 1 0 0; /* ! Esto establece que ocupara todo el alto disponible de la pantalla sin interferir con el Header y el Footer sin importar el tamaño del contenido*/
-    text-align: center;
-    justify-content: center;
-    font-family: 'Century Gothic';
-    font-size: 60px;
-    align-items: center;
+  width: 15%;
+  background-color: #fff;
+  color: #000000;
+  display: flex; /* ! Gracias a esta linea, la flecha se centra verticalmente*/
+  float: left;
+  flex: 1 0 0; /* ! Esto establece que ocupara todo el alto disponible de la pantalla sin interferir con el Header y el Footer sin importar el tamaño del contenido*/
+  text-align: center;
+  justify-content: center;
+  font-family: "Century Gothic";
+  font-size: 60px;
+  align-items: center;
 }
 .flecha-2 {
-    width: 15%;
-    background-color: #fff;
-    color: #000000;
-    display: flex;
-    float: left;
-    flex: 1 0 0;/* ! Esto establece que ocupara todo el alto disponible de la pantalla sin interferir con el Header y el Footer sin importar el tamaño del contenido*/
-    text-align: center;
-    justify-content: center;
-    font-family: 'Century Gothic';
-    font-size: 60px;
-    align-items: center;
+  width: 15%;
+  background-color: #fff;
+  color: #000000;
+  display: flex;
+  float: left;
+  flex: 1 0 0; /* ! Esto establece que ocupara todo el alto disponible de la pantalla sin interferir con el Header y el Footer sin importar el tamaño del contenido*/
+  text-align: center;
+  justify-content: center;
+  font-family: "Century Gothic";
+  font-size: 60px;
+  align-items: center;
 }
 
 .flecha-1-ref,
-.flecha-2-ref{
-    color: #000000;
-    text-decoration: none;
-    text-align: center;
-    justify-content: center;
-    font-family: 'Century Gothic';
-    font-size: 60px;
-    align-items: center;
-    border: solid 1px #000000;
-    padding-top: 100%;
-    padding-bottom: 100%;
-    padding-left: 25%;
-    padding-right: 25%;
+.flecha-2-ref {
+  color: #000000;
+  text-decoration: none;
+  text-align: center;
+  justify-content: center;
+  font-family: "Century Gothic";
+  font-size: 60px;
+  align-items: center;
+  border: solid 1px #000000;
+  padding-top: 100%;
+  padding-bottom: 100%;
+  padding-left: 25%;
+  padding-right: 25%;
 }
 
-.clearfix { /* ! Limpia los elementos flotados */
-    float: none;
-    clear: both;
+.clearfix {
+  /* ! Limpia los elementos flotados */
+  float: none;
+  clear: both;
 }
 
 .boton-servicio-1 {
-    display: block;
-    background-color: rgb(1,11,31);
-    color: #ccc;
-    border: solid 1px #071d2b;
-    padding: 7px;
-    border-radius: 5px;
-    float: right;
-    margin: 0 6vb 6vh 0;
-    font-family: 'Century Gothic';
-    font-size: 15px;
-    font-weight: 600;
-    cursor: pointer;
+  display: block;
+  background-color: rgb(1, 11, 31);
+  color: #ccc;
+  border: solid 1px #071d2b;
+  padding: 7px;
+  border-radius: 5px;
+  float: right;
+  margin: 0 6vb 6vh 0;
+  font-family: "Century Gothic";
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 .boton-servicio-3 {
-    display: block;
-    background-color: rgb(1,11,31);
-    color: #ccc;
-    border: solid 1px #071d2b;
-    padding: 7px;
-    border-radius: 5px;
-    float: right;
-    margin-top: 10px;
-    font-family: 'Century Gothic';
-    font-size: 15px;
-    font-weight: 600;
-    cursor: pointer;
+  display: block;
+  background-color: rgb(1, 11, 31);
+  color: #ccc;
+  border: solid 1px #071d2b;
+  padding: 7px;
+  border-radius: 5px;
+  float: right;
+  margin-top: 10px;
+  font-family: "Century Gothic";
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 .boton-servicio-1:hover,
 .boton-servicio-3:hover {
-    background-color: #093753;
-    color: #ffffff;
-    border: solid 1px #201679;
-    font-style: oblique;
+  background-color: #093753;
+  color: #ffffff;
+  border: solid 1px #201679;
+  font-style: oblique;
 }
 
 /*
@@ -283,80 +272,81 @@ form .e-derecha {
 */
 
 .galeria {
-    display: block;
-    justify-content: center;
-    align-items: center;
-    background-color: #000;
-    width: 100%;
-    height: 680px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  width: 100%;
+  height: 680px;
 }
 
 .img-galeria {
-    display: block;
-    margin: 2%;
-    float: left;
-    width: 30%;
-    height: auto;
-    transform: translate(50%);
-    border: solid 2px #000;
-    border-radius: 10px;
+  display: block;
+  margin: 2%;
+  float: left;
+  width: 30%;
+  height: auto;
+  transform: translate(50%);
+  border: solid 2px #000;
+  border-radius: 10px;
 }
 
 .img-galeria:hover {
-    border: solid 2px #fff;
+  border: solid 2px #fff;
 }
-
 
 /* 
     TODO: Estilos especificos para el modulo de empleados
 */
 a .seleccion-p1 {
-    float: left;
-    padding: 30px 5px;
-    background-color: #0a0441;
-    width: 38%;
-    justify-items: center;
-    align-items: center;
-    text-align: center;
-    margin-top: 6vh;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 3vh;
-    border-radius: 10px;
-    box-shadow: 4px 4px 5px #000;  /* !Sombra de los cuadros*/
-    text-decoration: none;
-    color: #fff;
+  float: left;
+  padding: 30px 5px;
+  background-color: #0a0441;
+  width: 38%;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 6vh;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 3vh;
+  border-radius: 10px;
+  box-shadow: 4px 4px 5px #000; /* !Sombra de los cuadros*/
+  text-decoration: none;
+  color: #fff;
 }
 
 a .seleccion-p1 .selecionp1-icons {
-    width: 25vb;
-    height: 25vh;
-    border: 3px dashed #fff;
-    border-radius: 100%;
+  width: 25vb;
+  height: 25vh;
+  border: 3px dashed #fff;
+  border-radius: 100%;
 }
 
 a .seleccion-p1 hr {
-    margin-top: 3px;
-    margin-bottom: 3px;
-    width: 50%;
-    transform: translate(50%);
+  margin-top: 3px;
+  margin-bottom: 3px;
+  width: 50%;
+  transform: translate(50%);
 }
 
-a .seleccion-p1 h4 { /* ! Titulo de los cuadros de seleccion */
-    letter-spacing: 2px;
-    margin-bottom: 5px;
+a .seleccion-p1 h4 {
+  /* ! Titulo de los cuadros de seleccion */
+  letter-spacing: 2px;
+  margin-bottom: 5px;
 }
 
-a .seleccion-p1 p { /* ! Descripción de los cuadros*/
-    margin-top: 3px;
-    font-size: 13px;
-    line-height: 12px; /* ! Separación de renglones*/
+a .seleccion-p1 p {
+  /* ! Descripción de los cuadros*/
+  margin-top: 3px;
+  font-size: 13px;
+  line-height: 12px; /* ! Separación de renglones*/
 }
 
 a .seleccion-p1:hover {
-    background-color: #0d1664;
-    box-shadow: 4px 4px 5px red; /* !Sombra de los cuadros en hover */
-    transition: 60ms all;
+  background-color: #0d1664;
+  box-shadow: 4px 4px 5px red; /* !Sombra de los cuadros en hover */
+  transition: 60ms all;
 }
 
 /*
@@ -364,17 +354,17 @@ a .seleccion-p1:hover {
     ? Aqui tambien Empiezan los estilos del FOOTER
 */
 footer {
-    margin-top: auto; /* ! Esta regla es complementaria de las aplicadas a la etiqueta BODY, para que el footer simepre se situe en la parte inferior de la pagina sin importar el tamaño del contenido */
-    width: 100%;
-    color: #ccc;
-    background-color: rgb(1, 11, 31);
-    text-align: center;
-    padding: 20px 0;
-    height: auto;
-    font-family: 'Century Gothic';
-    text-transform: uppercase;
-    font-weight: 900;
-    letter-spacing: 15px;
+  margin-top: auto; /* ! Esta regla es complementaria de las aplicadas a la etiqueta BODY, para que el footer simepre se situe en la parte inferior de la pagina sin importar el tamaño del contenido */
+  width: 100%;
+  color: #ccc;
+  background-color: rgb(1, 11, 31);
+  text-align: center;
+  padding: 20px 0;
+  height: auto;
+  font-family: "Century Gothic";
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 15px;
 }
 
 /* ! pantalla de 800x600 */

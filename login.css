@@ -160,21 +160,6 @@ form hr {
   font-weight: 600;
 }
 
-/* ! Esta parte no sirve porque se opto por utilizar divs internos dentro del formulario
-form .e-izquierda {
-    display: block;
-    left: 0;
-}
-form .e-derecha {
-    display: block;
-    right: 0;
-}*/
-
-/*form label {
-    display: block;*/
-/* ! Aqui no poner "float: left", ya que encima muchas cosas y pierde coherencia el formulario*/
-/*}*/
-
 .form-group {
   /* ! Esto Odena el interior de los formularios, cada campo por asi decirlo, debe de estar dentro de un div contenedor con el nombre de esta clase */
   display: flex;
@@ -389,11 +374,11 @@ a .tab-pdf {
   filter: invert(1) saturate(1000%);
 }
 
-.bottonEnlace-main{
-    display: block;
-    float: left;
-    margin-top: 50px;
-    margin-left: -30px;
+.bottonEnlace-main {
+  display: block;
+  float: left;
+  margin-top: 50px;
+  margin-left: -30px;
 }
 .bot-registrar {
   color: #000;
