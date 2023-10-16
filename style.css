@@ -98,7 +98,7 @@ form {
   display: block;
   border: solid 1px #000000;
   width: 41%;
-  float: left; /* ! Esta linea y la anterior establecen que los formularios se colocaran uno a lado del otro, ocupando un 98% de ancho de su elemento contenedor, que en este caso es ".centro". El display: block; se usa para que se le pueda colocar la propiedad float left a la etiqueta en cuestión, de lo contrario no se podria colocar*/
+  float: left; /* ! Esta linea y la anterior establecen que los formularios se colocaran uno a lado del otro, ocupando un 98% de ancho de su elemento contenedor (entre los 2), que en este caso es ".centro". El display: block; se usa para que se le pueda colocar la propiedad float left a la etiqueta en cuestión, de lo contrario no se podria colocar*/
   font-family: Arial, Helvetica, sans-serif;
   margin: 0 2.3% 2% 2.3%;
   border-radius: 10px;
@@ -114,6 +114,7 @@ legend {
 form hr {
   width: 50%;
   transform: translateX(50%);
+  margin-bottom: 5vh;
 }
 
 /* ! Estilos de la pagina "Servicios3.html" en la parte de los forularios con checkbox*/
@@ -169,9 +170,27 @@ form hr {
   /*Formularios*/
   margin-top: 10px;
   width: 90%;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
+
+.labels-n2{
+  max-width: 35%;
+  float: left;
+}
+
+.range-n2 {
+  max-width: 30%;
+  margin-left: 12.5%;
+  float: left;
+}
+
+.checkbox-5 {
+  float: right;
+  margin-right: 5%;
+}
+
+.form-titulos,
 .form-group {
   /* ! Esto Odena el interior de los formularios, cada campo por asi decirlo, debe de estar dentro de un div contenedor con el nombre de esta clase */
   display: flex;

@@ -4,6 +4,14 @@
 -Creditos de los recursos de imagenes a Bing Imagen Creator con Dall-E 3
 
 -------------------------------------------------------------------------------------------------------------------------
+V 2.1
+    Aquí se seguio construyendo la pagina de servecios, en la parte de los formularios en lo que seria la segunda parte de este modulo:
+    -[Implementación] de estructura HTML y CSS para la segunda parte del modulo de Servicios.
+    -[Implementación] de estructura HTML en el modulo de Materiales, para las tablas(aún incompleta).
+
+    Fecha [16/10/2023]
+    Bowzer
+
 V 2.0
     Aquí se corrigieron algunos estilos a modulos ya hechos y tambien se hicieron los diseños de otros 2 modulos (Empleados y Materiales):
     -[Correción] de colores

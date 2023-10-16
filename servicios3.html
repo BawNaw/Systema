@@ -217,6 +217,58 @@
             <form action="POST" class="form-oculto">
               <fieldset>
                 <legend>Niveles de Fluido:</legend>
+                <div class="form-titulos">
+                  <h3>Fluido</h3>
+                  <h3>Nivel</h3>
+                  <h3>No Aplica</h3>
+                </div>
+                <div class="labels-n2">
+                  <label for="Aceite-m">Aceite de Motor</label>
+                  <br>
+                  <label for="Aceite-tra">Aceite de Transmisión</label>
+                  <br>
+                  <label for="direc-hid">Fluido de Dirección Hidraulica</label>
+                  <br>
+                  <label for="liq-frenos">Liquido de Frenos</label>
+                  <br>
+                  <label for="anticongelante">Anticongelante</label>
+                  <br>
+                  <label for="liq-emb">Liquido Embrague</label>
+                  <br>
+                </div>
+                <div class="range-n2">
+                  <input type="range" name="Aceite-m" id="Aceite-m">
+                  <br>
+                  <input type="range" name="Aceite-tra" id="Aceite-tra">
+                  <br>
+                  <input type="range" name="direc-hid" id="direc-hid">
+                  <br>
+                  <input type="range" name="liq-frenos" id="liq-frenos">
+                  <br>
+                  <input type="range" name="anticongelante" id="anticongelante">
+                  <br>
+                  <input type="range" name="liq-emb" id="liq-emb">
+                </div>
+                <div class="checkbox-5">
+                  <input type="checkbox" id="Aceite-m" name="Aceite-m">
+                  <br>
+                  <input type="checkbox" id="Aceite-tra" name="Aceite-tra">
+                  <br>
+                  <input type="checkbox" id="direc-hid" name="direc-hid">
+                  <br>
+                  <input type="checkbox" id="liq-frenos" name="liq-frenos">
+                  <br>
+                  <input type="checkbox" id="anticongelante" name="anticongelante">
+                  <br>
+                  <input type="checkbox" id="liq-emb" name="liq-emb">
+                </div>
+                <!--Aqui va Otro, Fielinput y guardar-->
+                <div class="clearfix"></div>
+                <input type="checkbox" id="otro" name="otro" />
+                <label for="otro">Otro:</label>
+                <br />
+                <input type="text" name="otro" class="filargo"/>
+                <button type="button" class="boton-servicio-3">Gurdar</button>
               </fieldset>
             </form>
           </div>
@@ -230,6 +282,141 @@
             <form action="POST" class="form-oculto">
               <fieldset>
                 <legend>Servicios:</legend>
+                <input
+                  type="checkbox"
+                  class="checkbox-3"
+                  id="distribucion"
+                  name="distribucion"
+                />
+                <label
+                  class="chackbox-label"
+                  for="distribucion"
+                  data-option="Distribución"
+                ></label>
+                <input
+                  type="checkbox"
+                  class="checkbox-3"
+                  id="mototres"
+                  name="mototres"
+                />
+                <label
+                  class="chackbox-label"
+                  for="mototres"
+                  data-option="Motores"
+                ></label>
+                <input
+                  type="checkbox"
+                  class="checkbox-3"
+                  id="transm"
+                  name="transm"
+                />
+                <label
+                  class="chackbox-label"
+                  for="transm"
+                  data-option="Transmisión"
+                ></label>
+
+                <input
+                  type="checkbox"
+                  class="checkbox-3"
+                  id="escaneo"
+                  name="escaneo"
+                />
+                <label
+                  class="chackbox-label"
+                  for="escaneo"
+                  data-option="Escaneo"
+                ></label>
+                <input
+                  type="checkbox"
+                  class="checkbox-3"
+                  id="hid-direct"
+                  name="hid-direct"
+                />
+                <label
+                  class="chackbox-label"
+                  for="hid-direct"
+                  data-option="Drirección Hidraulica"
+                ></label>
+                <input
+                  type="checkbox"
+                  class="checkbox-3"
+                  id="gen-mec"
+                  name="gen-mec"
+                />
+                <label
+                  class="chackbox-label"
+                  for="gen-mec"
+                  data-option="Mecanica General"
+                ></label>
+
+                <input
+                  type="checkbox"
+                  class="checkbox-3"
+                  id="mante-p"
+                  name="mante-p"
+                />
+                <label
+                  class="chackbox-label"
+                  for="mante-p"
+                  data-option="Mantenimiento Preventivo"
+                ></label>
+                <input
+                  type="checkbox"
+                  class="checkbox-3"
+                  id="frenos2"
+                  name="frenos2"
+                />
+                <label
+                  class="chackbox-label"
+                  for="frenos2"
+                  data-option="Frenos"
+                ></label>
+                <input
+                  type="checkbox"
+                  class="checkbox-3"
+                  id="afinacion"
+                  name="afinacion"
+                />
+                <label
+                  class="chackbox-label"
+                  for="afinacion"
+                  data-option="Afinación"
+                ></label>
+                <input
+                  type="checkbox"
+                  class="checkbox-3"
+                  id="susp"
+                  name="susp"
+                />
+                <label
+                  class="chackbox-label"
+                  for="susp"
+                  data-option="Suspención"
+                ></label>
+                <input
+                  type="checkbox"
+                  class="checkbox-3"
+                  id="electric-err"
+                  name="electric-err"
+                />
+                <label
+                  class="chackbox-label"
+                  for="electric-err"
+                  data-option="Fallas Electricas"
+                ></label>
+                <input
+                  type="checkbox"
+                  class="checkbox-3"
+                  id="clutch"
+                  name="clutch"
+                />
+                <label
+                  class="chackbox-label"
+                  for="clutch"
+                  data-option="Clutch"
+                ></label>
+                <button type="button" class="boton-servicio-3">Gurdar</button>
               </fieldset>
             </form>
           </div>
