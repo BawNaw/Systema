@@ -75,6 +75,7 @@ main {
   text-align: center; /* ! Esto centra lo que esta en el Div de clase "encabezado" para que se encuentre centrado*/
   align-items: center;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .centro .encabezado h1 {
@@ -368,6 +369,57 @@ a .seleccion-p1:hover {
   transition: 60ms all;
 }
 
+.botton-enlace {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/* ! Estilos del menu flotante de cirulos de Servicios*/
+
+.nav-cc {
+  position: absolute;
+  display: block;
+  color: #000;
+  font-family: sans-serif;
+  transform: translate(137%);
+  margin-top: -43px;
+  z-index: 1;
+}
+
+.numNav-cc {
+  position: relative;
+  font-size: 15px;
+  float: left;
+  background-color: #0a0441;
+  padding: 8px 15px;
+  border-radius: 100%;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: -23px;
+  z-index: 2;
+}
+
+.numNav-cc > a {
+  color: #ccc;
+  text-decoration: none;
+  transition: 1s all;
+}
+
+.numNav-cc > a:hover {
+  text-shadow: 0 0 6px #fff;
+}
+
+.hrNav-cc {
+  position: relative;
+  width: 80%;
+  color: #0a0441;
+  border-color: #0a0441;
+  background-color: #0a0441;
+  transform: translate(12%);
+  z-index: 0;
+}
+
 /*
     ? Aqui Acaban los estilos del MAIN
     ? Aqui tambien Empiezan los estilos del FOOTER
@@ -377,13 +429,58 @@ footer {
   width: 100%;
   color: #ccc;
   background-color: rgb(1, 11, 31);
-  text-align: center;
   padding: 20px 0;
   height: auto;
   font-family: "Century Gothic";
   text-transform: uppercase;
   font-weight: 900;
   letter-spacing: 15px;
+  align-items: center;
+  justify-content: space-around;
+  /* !Esta linea y la siguiente corriguen un error de posicionamiento del footer para que siempre se posicione abajo [07/10/2023] */
+  bottom: 0;
+  display: flex; /* ! Esta linea es muy importante, sin ella todo se descompone*/
+} 
+
+.img-logo-foot{
+  border-radius: 10px;
+  margin: 15px 0 15px -70px;
+  width: 90%;
+}
+
+.botones-footer {
+  display: inline-block;
+}
+
+.botones-footer > ul {
+  display: inline-block;
+  list-style: none;
+}
+
+.botones-footer > ul > li{
+  display: inline-block;
+}
+
+.icons-f {
+  width: 35px;
+  height: 35px;
+  filter: invert(1);
+  border-radius: 100%;
+}
+.hblue:hover { /* azul*/
+  filter: invert(35%) sepia(1) hue-rotate(150deg) saturate(1000%) drop-shadow(0 0 20px #fff);
+}
+.horange:hover { /* naranja */
+  filter: invert(0.5) sepia(1) hue-rotate(0deg) saturate(1000%) drop-shadow(0 0 20px #fff);
+}
+.hgreen:hover { /* verde */
+  filter: invert(0.4) sepia(1) hue-rotate(80deg) saturate(1000%) drop-shadow(0 0 20px #fff);
+}
+.hblued:hover { /* azul oscuro*/
+  filter: invert(20%) sepia(1) hue-rotate(150deg) saturate(1000%) drop-shadow(0 0 20px #fff); /* ! Modificar el porcentaje de la propiedad invert() hace el color mas oscuro mientras mas se acerque a 0% y mas brillante mientras más se acerque a 100%*/
+}
+.hblack:hover { /* negro*/
+  filter: sepia(0) hue-rotate(150deg) saturate(1000%) drop-shadow(0 0 20px #fff);
 }
 
 /* ! pantalla de 800x600 */

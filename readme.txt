@@ -4,6 +4,25 @@
 -Creditos de los recursos de imagenes a Bing Imagen Creator con Dall-E 3
 
 -------------------------------------------------------------------------------------------------------------------------
+V 2.2 - Main
+    Mega update que consto de la creación y adición del footer, cambio en los diseños que llevaban flechas para un trabajo con vistas más profesionales. También se has incluidos nuevos recursos de iconos para el footer, correcciones en código de estilos y algunas ligeras modificaciones en HTML.
+    Importante resaltar que el elemento de barra de navegación para la parte de servicios esta con estilo de posicionamiento absoluto y de momento es el unico elementoposicionado de esta forma.
+    -[Correción] de algunos estilos predesarrollados para correcto posicionamiento (footer).
+    -[Correción] de HTML para eliminar flechas laterales y sus etilos del CSS.
+    -[Correción] adicional en diferentes partes de los codigos HTML y CSS en general
+    -[Implementación] & [Diseño] del diseño del Footer.
+
+    NOTAS IMPORTANTES:
+    - Si se presenta algun priblema con el posicionamiento del footer agregar al footer la clase de "fx", asi se aplicaran estilos que pueden corregir ese error de posicionamiento.
+    - Programar la barra de navegación por circulos de el modulo de servicios.
+    - En los formularios, programar los inputs de tipo range, en la primera parte recordar que la etiqueta para este input es un DIV, pero pueden cambiarlo para su preferencia/comodidad del programador.
+
+    - [Nota no muy relevante] posiblemente se cambien los iconos de footer para una mejor adaptación.
+    - Se esta trabajando con las ventanas emergentes pero no sera subido nada relacionado en esta actualización.
+    
+    Fecha [31/10/2023]
+    Bowzer
+
 V 2.1
     Aquí se seguio construyendo la pagina de servecios, en la parte de los formularios en lo que seria la segunda parte de este modulo:
     -[Implementación] de estructura HTML y CSS para la segunda parte del modulo de Servicios.
