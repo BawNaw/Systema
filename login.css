@@ -47,6 +47,10 @@ header {
   width: auto;
   border-radius: 10px; /* ! Aqui se le da un acabado redondeado a las esquinas del logo del menu */
 }
+
+.ee {
+  margin-bottom: 50px;
+}
 /*
     ? Aqui Acaban los estilos del HEADER
     ? Aqui tambien Empiezan los estilos del MAIN
@@ -391,6 +395,268 @@ a .tab-pdf {
   background-color: #008cff;
   font-style: italic;
 }
+
+/*! Estilos eplicados a la Quinta parte de Servicios - Canvas*/
+
+.elementos-canvas{
+  width: 100%;
+  height: 500px;
+  background-color: #01073f;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.min-img-canvas {
+  width: 13%;
+  height: 100%;
+  background-color: #030e70;
+  border: solid 1px #000;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+
+.min-cnvs{
+  transform: translate(8%);
+  display: block;
+  height: 150px;
+  width: 150px;
+  margin: 11px 0 10px 0;
+  background-color: #ccc;
+  border: solid 1px #000;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+.grd-img-canvas{
+  width: 75%;
+  background-color: #030e70;
+  height: 100%;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+.grand-cnvs {
+  height: 95%;
+  width: 95%;
+  margin: 1% 0 3% 0;
+  background-color: #ccc;
+  border: solid 1px #000;
+  box-sizing: border-box;
+  float: right;
+  transform: translate(-2.5%);
+}
+
+.simbologia-canvas {
+  width: 9%;
+  height: 100%;
+  background-color: #030e70;
+  border: solid 1px #000;
+  border-radius: 15px;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.sim {
+  width: 100%;
+  height: 35px;
+  margin: 15px 0 0 0;
+  background-color: #fff;
+  border: solid 1px #000;
+  border-radius: 15px;
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+.sim > h4 {
+  font-size: 16px;
+  line-height: 35px;
+  display: block;
+  float: right;
+  margin-right: 10px;
+}
+
+.sim > img {
+  height: 25px;
+  width: 25px;
+  margin-left: 10px;
+  transform: translateY(7px);
+}
+
+.boton-servicio-1 {
+  display: block;
+  background-color: rgb(1, 11, 31);
+  color: #ccc;
+  border: solid 1px #071d2b;
+  padding: 7px;
+  border-radius: 5px;
+  float: right;
+  margin: 0 6vb 6vh 0;
+  font-family: "Century Gothic";
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.boton-servicio-1:hover {
+  background-color: #093753;
+  color: #ffffff;
+  border: solid 1px #201679;
+  font-style: oblique;
+}
+.botton-enlace {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*! Estilos eplicados a la sexta parte de Servicios*/
+
+
+.apartado-fotos {
+  color: #fff;
+  background-color: #01073f;
+  border-radius: 15px;
+  width: 80%;
+  height: 410px;
+  text-align: center;
+  transform: translate(15%);
+}
+.apartado-fotos h1{
+  padding: 20px 0;
+}
+.icon-foto {
+  background-color: #fff;
+  width: 25%;
+  height: auto;
+  border-radius: 10px;
+  margin-left: 150px;
+  display: block;
+  float: left;
+}
+
+.icon-foto > img {
+  width: 100%;
+  height: 100%;
+}
+
+.icon-foto > h6 {
+  color: #000;
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+}
+.view-fotos {
+  display: block;
+  float: right;
+  width: 50%;
+  height: auto;
+  max-height: 310px;
+  overflow-y: auto;
+  text-align: left;
+}
+.pict {
+  background-color: #fff;
+  color: #000;
+  border-radius: 10px;
+  width: 90%;
+  height: 30px;
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: space-between;
+}
+.pict h4 {
+  margin-left: 10px;
+  text-align: center;
+  line-height: 30px;
+}
+.pict > div > button {
+  width: 35px;
+  height: 25px;
+  margin-top: 2px;
+  margin-right: 5px;
+}
+
+.pict > div > button > img {
+  width: 100%;
+  height: 100%;
+}
+.final-bs{
+  float: right;
+  width: 150px;
+  height: 35px;
+  justify-content: space-around;
+  border-radius: 15px;
+  margin-right: 12%;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  background-color: #0a0441;
+  cursor: pointer;
+  display: flex;
+}
+.final-bs > h4 {
+  text-align: center;
+  line-height: 35px;
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+}
+.final-bs > img {
+  margin-top: 5px;
+  width: 17%;
+  height: auto;
+  filter: invert(1)
+}
+
+.final-bs:hover {
+  background-color: #000d7e;
+  font-style: italic;
+  text-shadow: 0 0 8px #fff;
+}
+
+.final-bs:hover > img {
+  filter: invert(1) drop-shadow(0 0 8px #fff);
+}
+
+/* ! Estilos del menu flotante de cirulos de Servicios*/
+
+.nav-cc {
+  position: absolute;
+  display: block;
+  color: #000;
+  font-family: sans-serif;
+  transform: translate(180%);
+  margin-top: -43px;
+  z-index: 1;
+}
+
+.numNav-cc {
+  position: relative;
+  font-size: 15px;
+  float: left;
+  background-color: #0a0441;
+  padding: 8px 15px;
+  border-radius: 100%;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: -23px;
+  z-index: 2;
+}
+
+.numNav-cc > a {
+  color: #ccc;
+  text-decoration: none;
+  transition: 1s all;
+}
+
+.numNav-cc > a:hover {
+  text-shadow: 0 0 6px #fff;
+}
+
+.hrNav-cc {
+  position: relative;
+  width: 80%;
+  color: #0a0441;
+  border-color: #0a0441;
+  background-color: #0a0441;
+  transform: translate(12%);
+  z-index: 0;
+}
 /*
     ? Aqui Acaban los estilos del MAIN
     ? Aqui tambien Empiezan los estilos del FOOTER
@@ -458,7 +724,7 @@ footer {
   border-radius: 100%;
 }
 .hblue:hover { /* azul*/
-  filter: invert(35%) sepia(1) hue-rotate(150deg) saturate(1000%) drop-shadow(0 0 20px #fff);
+  filter: invert(40%) sepia(1) hue-rotate(150deg) saturate(1000%) drop-shadow(0 0 20px #fff);
 }
 .horange:hover { /* naranja */
   filter: invert(0.5) sepia(1) hue-rotate(0deg) saturate(1000%) drop-shadow(0 0 20px #fff);
@@ -467,7 +733,7 @@ footer {
   filter: invert(0.4) sepia(1) hue-rotate(80deg) saturate(1000%) drop-shadow(0 0 20px #fff);
 }
 .hblued:hover { /* azul oscuro*/
-  filter: invert(20%) sepia(1) hue-rotate(150deg) saturate(1000%) drop-shadow(0 0 20px #fff); /* ! Modificar el porcentaje de la propiedad invert() hace el color mas oscuro mientras mas se acerque a 0% y mas brillante mientras más se acerque a 100%*/
+  filter: invert(30%) sepia(1) hue-rotate(150deg) saturate(1000%) drop-shadow(0 0 20px #fff); /* ! Modificar el porcentaje de la propiedad invert() hace el color mas oscuro mientras mas se acerque a 0% y mas brillante mientras más se acerque a 100%*/
 }
 .hblack:hover { /* negro*/
   filter: sepia(0) hue-rotate(150deg) saturate(1000%) drop-shadow(0 0 20px #fff);
