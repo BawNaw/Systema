@@ -4,6 +4,11 @@
 -Creditos de los recursos de imagenes a Bing Imagen Creator con Dall-E 3
 
 -------------------------------------------------------------------------------------------------------------------------
+V 2.3 - Main
+    Update Modulos de Servicios Faltantes conston en crear, diseñar he implemerntar con las otras paginas, "3" (en realidad 6) paginas más al apartado de Servicios, las cuales fueron: "servicios-5... .html"(todos los servicios-5-...), "servicios-3.html" y "Servicios-6.html", se agregaron nuevos estilos en ambos documentos CSS3 y se agregaron nuevos iconos correspondientes al modulo de servicios.
+    -[Implementación] & [Diseño] de 3 paginas nuevas del apartado de servicios.
+    -[Implementación] de Nuevos iconos.
+
 V 2.2 - Main
     Mega update que consto de la creación y adición del footer, cambio en los diseños que llevaban flechas para un trabajo con vistas más profesionales. También se has incluidos nuevos recursos de iconos para el footer, correcciones en código de estilos y algunas ligeras modificaciones en HTML.
     Importante resaltar que el elemento de barra de navegación para la parte de servicios esta con estilo de posicionamiento absoluto y de momento es el unico elementoposicionado de esta forma.
